@@ -1,0 +1,32 @@
+total 44
+drwxr-xr-x 3 root root 245 Jun 14 11:00 .
+drwxr-xr-x 6 root root 121 Jun 14 06:55 ..
+-rwxr--r-- 1 root root  35 Jun 14 07:43 0-hello_world
+-rwxr--r-- 1 root root  29 Jun 14 07:29 1-confused_smiley
+-rwxr--r-- 1 root root  28 Jun 14 07:58 2-hellofile
+-rwxr--r-- 1 root root  39 Jun 14 08:03 3-twofiles
+-rwxr--r-- 1 root root  33 Jun 14 07:53 4-lastlines
+-rwxr--r-- 1 root root  33 Jun 14 08:05 5-firstlines
+-rwxr--r-- 1 root root  36 Jun 14 08:38 6-third_line
+-rwxr-xr-x 1 root root  85 Jun 14 10:55 7-file
+-rwxr-xr-x 1 root root  37 Jun 14 10:59 8-cwd_state
+drwxr-xr-x 8 root root 166 Jun 14 09:31 .git
+-rw-r--r-- 1 root root  12 Jun 14 08:10 iacta
+-rw-r--r-- 1 root root   0 Jun 14 11:00 ls_cwd_content
+-rw-r--r-- 1 root root  25 Jun 14 06:57 README.md
+total 48
+drwxr-xr-x 3 root root 245 Jun 14 11:01 .
+drwxr-xr-x 6 root root 121 Jun 14 06:55 ..
+-rwxr--r-- 1 root root  35 Jun 14 07:43 0-hello_world
+-rwxr--r-- 1 root root  29 Jun 14 07:29 1-confused_smiley
+-rwxr--r-- 1 root root  28 Jun 14 07:58 2-hellofile
+-rwxr--r-- 1 root root  39 Jun 14 08:03 3-twofiles
+-rwxr--r-- 1 root root  33 Jun 14 07:53 4-lastlines
+-rwxr--r-- 1 root root  33 Jun 14 08:05 5-firstlines
+-rwxr--r-- 1 root root  36 Jun 14 08:38 6-third_line
+-rwxr-xr-x 1 root root  85 Jun 14 10:55 7-file
+-rwxr-xr-x 1 root root  37 Jun 14 10:59 8-cwd_state
+drwxr-xr-x 8 root root 166 Jun 14 09:31 .git
+-rw-r--r-- 1 root root  14 Jun 14 11:01 iacta
+-rw-r--r-- 1 root root 762 Jun 14 11:00 ls_cwd_content
+-rw-r--r-- 1 root root  25 Jun 14 06:57 README.md
