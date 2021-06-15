@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -regex ".*\.gif" -printf "%f\n" | cut -d "." -f 1
+find . -type f -regex ".*\.gif" -printf "%f\n" | cut -d "." -f 1 | LC_ALL=C sort -f | rev
