@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # Write a Bash script that displays:
 
-if [[ -e $school ]]
+if [[ -e $"school" ]]
 then
 echo "school file exists"
-    if [[ -s $school ]]
+    if [[ -s $"school" ]]
     then
         echo "school file is not empty"
-    elif [[ -f $school ]]
+    elif [[ -f $"school" ]]
     then
         echo "school is a regular file"
     else

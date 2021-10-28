@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Write a Bash script that displays numbers from 1 to 100.
+
+for ((n=0;n<10;n++))
+do
+    if (( $n % 5 == 0 ))
+done
