@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+while [[ $x -le 20 ]]
+do
+    case $x in
+	5) echo "bad luck from China"
+	echo "$x" ;;
+	10) echo "bad luck from Japan" 
+	echo "$x" ;;
+	18) echo "bad luck from Italy" 
+	echo "$x" ;;
+	*) echo "$x" ;;
+    esac
+    x=$(( x + 1 ))
+done
