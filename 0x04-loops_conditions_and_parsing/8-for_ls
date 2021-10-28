@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Write a Bash script that displays:
+for File in *
+    do
+    if [ -r "$File" -a -w "$File" -a -x "$File" ]
+    then
+        echo "$File"
+    fi
+done
