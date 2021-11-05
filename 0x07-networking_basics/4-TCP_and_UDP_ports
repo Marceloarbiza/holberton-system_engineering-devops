@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
+# nestat lp
+
 netstat -l -p

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Is the host on the network
 
 if [ "$#" -eq 0 ]
 then
