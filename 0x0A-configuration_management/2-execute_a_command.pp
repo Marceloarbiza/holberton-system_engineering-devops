@@ -1,4 +1,4 @@
 # Manifest that kills a process named killmenow:
 
-exec {'/usr/bin/env pkill killmenow': 
+exec {'/usr/bin/env pkill killmenow':
 }
