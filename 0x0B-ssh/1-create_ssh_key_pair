@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+issh-keygen -t school -b 4096
