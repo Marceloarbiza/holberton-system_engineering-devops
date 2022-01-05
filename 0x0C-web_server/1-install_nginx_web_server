@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # i hate network, really.
 
-sudo apt update
+sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo ufw allow 'Nginx HTTP'
-echo "Hello World" | sudo tee file /var/www/html/index.html
+sudo mkdir -p /var/www/html
+sudo touch /var/www/html/index.html
+sudo echo "Hello World" > /var/www/html/index.htmlsudo
 sudo service nginx restart
