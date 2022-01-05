@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# i hate network, really. Hell yes
+
+sudo apt-get -y install nginx
+sudo echo 'Holberton School' > /var/www/html/index.html
