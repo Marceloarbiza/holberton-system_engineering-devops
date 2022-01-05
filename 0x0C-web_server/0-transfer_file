@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# i hate network, really.
 
 if [ "$#" -lt 3 ];
 then
