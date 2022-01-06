@@ -1,4 +1,3 @@
 #!/usr/bin/env
-#comentsrio
-
+# hate this
 service apache2 restart
