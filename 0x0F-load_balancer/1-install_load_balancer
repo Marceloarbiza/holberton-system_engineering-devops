@@ -2,7 +2,7 @@
 # LB
 # web-01 web-02
 apt update
-apt install -y haproxy=1.6.\*
+apt install -y haproxy=1.5.\*
 
 printf %s "
 frontend http_front
