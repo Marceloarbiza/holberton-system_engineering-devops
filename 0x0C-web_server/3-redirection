@@ -1,8 +1,20 @@
 #!/usr/bin/env bash
-# i hate network, really.
+# Redirection
 
-sudo apt update
+sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
-sed -i "/server_name _/a \        rewrite ^/redirect_me/ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n" /etc/nginx/sites-available/default
-sudo service nginx restart
+
+echo "Hello World!" > /var/www/html/index.html
+
+printf %s "server {
+    listen 80;
+    listen [::]:80;
+    root   /var/www/html;
+    index  index.html;
+    location /redirect_me {
+        return 301  https://www.youtube.com/watch?v=QH2-TGUlwu4 ;
+    }
+}" > /etc/nginx/sites-available/default
+
+service nginx restart
