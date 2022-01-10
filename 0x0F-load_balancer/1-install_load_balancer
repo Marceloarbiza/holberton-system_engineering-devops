@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-#install load balancer
-
+# LB
+# web-01 web-02
 apt update
 apt install -y haproxy=1.6.\*
 
