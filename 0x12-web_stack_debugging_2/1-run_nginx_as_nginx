@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 # nginx config
-
 pkill apache2
 pkill nginx
 sed -i 's/80 default_server/8080 default_server/g' /etc/nginx/sites-available/default
