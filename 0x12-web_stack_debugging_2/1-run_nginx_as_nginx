@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # nginx config
 pkill apache2
 pkill nginx
