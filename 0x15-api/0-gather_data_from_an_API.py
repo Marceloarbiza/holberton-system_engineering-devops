@@ -4,9 +4,7 @@
 
 if __name__ == "__main__":
     import requests
-    import sys
-
-    args = sys.argv
+    from sys import argv
 
     def find_user():
         """ find the user """
@@ -14,7 +12,7 @@ if __name__ == "__main__":
         list_users = response.json()
 
         for user in list_users:
-            if user["id"] == int(args[1]):
+            if user["id"] == int(argv[1]):
                 return user
 
     def find_todo():
@@ -25,9 +23,9 @@ if __name__ == "__main__":
         list_todo = response.json()
 
         for todo in list_todo:
-            if todo['userId'] == int(args[1]):
+            if todo['userId'] == int(argv[1]):
                 total_todos += 1
-            if todo['userId'] == int(args[1]) and todo['completed'] is True:
+            if todo['userId'] == int(argv[1]) and todo['completed'] is True:
                 todos.append(todo["title"])
         return todos, total_todos
 
@@ -43,6 +41,6 @@ if __name__ == "__main__":
               format(user_found["name"], leni, todo_found[1]))
 
         for x in range(leni):
-            print(f'\t {todo_found[0][x]}')
+            print('\t {}'.format(todo_found[0][x]))
 
     user_todo()
