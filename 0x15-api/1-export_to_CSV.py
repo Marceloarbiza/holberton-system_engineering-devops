@@ -52,15 +52,15 @@ if __name__ == "__main__":
         todo_found = find_todo()
         file_csv = '{}.csv'.format(argv[1])
 
-        u_id = str(user_found["id"])
+        u_id = user_found["id"]
         u_username = user_found["username"]
 
-        li_user = [u_id, u_username, 'x', 'y']
+        li_user = [u_id, u_username, '', '']
 
         with open(file_csv, 'w') as f:
-            writer = csv.writer(f)
+            writer = csv.writer(f, quoting=csv.QUOTE_ALL)
             for t in todo_found[2]:
-                li_user[2] = str(t["completed"])
+                li_user[2] = t["completed"]
                 li_user[3] = t["title"]
                 writer.writerow(li_user)
 
