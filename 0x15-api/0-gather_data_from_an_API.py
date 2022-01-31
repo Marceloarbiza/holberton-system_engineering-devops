@@ -33,6 +33,8 @@ if __name__ == "__main__":
 
     def user_todo():
         """ display funcs """
+        leni = 0
+
         user_found = find_user()
         todo_found = find_todo()
         leni = len(todo_found[0])
