@@ -13,6 +13,7 @@ if __name__ == "__main__":
     args = sys.argv
 
     def find_user():
+        """ find the user """
         with ureq.urlopen('https://jsonplaceholder.typicode.com/users') as f:
             list_users = json.load(f)
             for user in list_users:
@@ -20,6 +21,7 @@ if __name__ == "__main__":
                     return user
 
     def find_todo():
+        """ find todos """
         response = requests.get('https://jsonplaceholder.typicode.com/todos')
         list_todo = response.json()
         todos = []
@@ -32,11 +34,12 @@ if __name__ == "__main__":
         return todos, total_todos
 
     def user_todo():
+        """ display funcs """
         user_found = find_user()
         todo_found = find_todo()
         leni = len(todo_found[0])
-        print(f'Employee {user_found["name"]} is done with tasks\
-              ({leni}/{todo_found[1]}):')
+        print('Employee {} is done with tasks\
+              ({}/{}):'.format(user_found["name"], leni, todo_found[1]))
         for x in range(leni):
             print(f'\t {todo_found[0][x]}')
 
