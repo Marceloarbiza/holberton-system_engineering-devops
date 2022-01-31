@@ -5,10 +5,10 @@ for a given employee ID, returns information about
 his/her TODO list progress.
 """
 if __name__ == "__main__":
-    import urllib.request as ureq
+    import json
     import requests
     import sys
-    import json
+    import urllib.request as ureq
 
     args = sys.argv
 
