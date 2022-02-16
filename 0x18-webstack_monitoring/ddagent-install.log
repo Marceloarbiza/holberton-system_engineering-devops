@@ -1,0 +1,48 @@
+[34m
+* Datadog Agent install script v1.7.1
+[0m
+[34m
+* Installing apt-transport-https, curl and gnupg
+[0m
+Hit:1 http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu focal InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Hit:5 https://download.docker.com/linux/ubuntu focal InRelease
+Get:6 https://apt.releases.hashicorp.com focal InRelease [9,495 B]
+Hit:7 https://deb.nodesource.com/node_10.x focal InRelease
+Get:8 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:9 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1,547 kB]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [840 kB]
+Get:11 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [961 kB]
+Get:12 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [25.8 kB]
+Get:13 https://apt.releases.hashicorp.com focal/main amd64 Packages [59.4 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [29.4 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1,973 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1,134 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [1,030 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [24.8 kB]
+Fetched 7,971 kB in 17s (461 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.68.0-1ubuntu2.7).
+gnupg is already the newest version (2.2.19-3ubuntu2.1).
+gnupg set to manually installed.
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ firefox-geckodriver : Depends: firefox (= 96.0+build2-0ubuntu0.20.04.1) but 95.0.1+build2-0ubuntu0.20.04.1 is to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+[31m
+It looks like you hit an issue when trying to install the Agent.
+
+Troubleshooting and basic usage information for the Agent are available at:
+
+    https://docs.datadoghq.com/agent/basic_agent_usage/
+[0m
+Do you want to send a failure report to Datadog (including ddagent-install.log)? (y/[n]) Enter an email address so we can follow up: [33m(1/3) Email address invalid: n[0m
+
+Enter an email address so we can follow up: [33m(2/3) Email address invalid: no[0m
+
+Enter an email address so we can follow up: 
